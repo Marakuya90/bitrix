@@ -1,8 +1,8 @@
 <?php
 require $_SERVER['DOCUMENT_ROOT']."/bitrix/header.php";
 $APPLICATION->SetTitle("Example2");
-
-?><section class="py-5 text-center container">
+?>
+<section class="py-5 text-center container">
 <div class="row py-lg-5">
 	<div class="col-lg-6 col-md-8 mx-auto">
 		<h1 class="fw-light">Album example</h1>
@@ -157,3 +157,4 @@ $APPLICATION->SetTitle("Example2");
 	</div>
 </div>
 <br>
+<?=require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

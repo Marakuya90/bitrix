@@ -1,19 +1,16 @@
 <?php
-
 if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
-
 $asset = \Bitrix\Main\Page\Asset::getInstance();
 $asset->addCss(SITE_TEMPLATE_PATH . '/css/bootstrap.min.css');
+$asset->addJs(SITE_TEMPLATE_PATH . '/js/bootstrap.bundle.min.js');
 ?>
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
 <head>
-<!--    <script src="../assets/js/color-modes.js"></script>-->
-    <title><?=$APPLICATION->ShowTitle();?></title>
-    <?php $APPLICATION->ShowHead();?>
-
+<!--        <script src="../assets/js/color-modes.js"></script>-->
+    <title><?= $APPLICATION->ShowTitle();?></title>
+    <?php $APPLICATION->ShowHead(); ?>
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
-
     <style>
         .bd-placeholder-img {
             font-size: 1.125rem;
@@ -83,6 +80,7 @@ $asset->addCss(SITE_TEMPLATE_PATH . '/css/bootstrap.min.css');
             --bs-btn-active-bg: #5a23c8;
             --bs-btn-active-border-color: #5a23c8;
         }
+
         .bd-mode-toggle {
             z-index: 1500;
         }
